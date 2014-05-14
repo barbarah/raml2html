@@ -7,6 +7,11 @@
                 {{/methods}}
                 <span class="parent">{{parentUrl}}</span>{{relativeUri}}
             </a>
+            {{#if description}}
+                <div class="resource-description">
+                    {{md description}}
+                </div>
+            {{/if}}
         </h4>
     </div>
     <div id="panel_{{uniqueId}}" class="panel-collapse collapse">
